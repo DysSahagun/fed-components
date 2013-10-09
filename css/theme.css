@@ -1,0 +1,280 @@
+/*
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Roboto:400,700,400italic);
+
+.font-usage {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+*/
+
+/*------------------------- Element highlight -------------------------*/
+::-moz-selection {
+	color: #fff;
+    background: #222;
+}
+
+::selection {
+	color: #fff;
+    background: #222;
+}
+
+/*------------------------- Skeleton -------------------------*/
+html,
+button,
+input,
+select,
+textarea {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+	background-color: #f2f2f2;
+}
+
+html,
+#colophon {
+	background-color: #ebebeb;
+}
+
+/*------------------------- Header -------------------------*/
+#masthead,
+.psu-btn,
+.nav-menu .sub-menu {
+	background-color: #303d60;
+}
+
+/*------------------------- Links -------------------------*/
+a {
+	color: #ff7f00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*------------------------- Navigation -------------------------*/
+.nav-menu a,
+.nav-menu a:hover {
+	color: #fff;
+}
+
+.nav-menu a {
+	color: hsla(0, 0%, 100%, .85);
+}
+
+/* Selected item */
+.nav-menu .current_nav-menu-item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	font-weight: bold;
+}
+
+/*------------------------- Border radius -------------------------*/
+.ui-border-radius {
+	border-radius: .25em;
+}
+
+.ui-dialog {
+	border-radius: .35em;
+}
+
+/*------------------------- Border -------------------------*/
+.ui-vis-border,
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+select,
+textarea,
+
+/* UI */
+.ui-dialog {
+	border-color: #d9d9d9;
+	border: 1px solid hsl(0, 0%, 85%);
+}
+
+/*------------------------- Text inside content -------------------------*/
+.txt-ttl {
+	color: #999;
+	color: hsl(0, 0%, 60%);
+}
+
+/*------------------------- Forms -------------------------*/
+/* Placeholder text color */
+::-webkit-input-placeholder {
+	color: #808080;
+}
+
+:-moz-placeholder {
+	color: #808080;
+}
+
+::-moz-placeholder {
+	color: #808080;
+}
+
+:-ms-input-placeholder {
+	color: #808080;
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: inherit;
+}
+
+input,
+select,
+textarea {
+	box-shadow: 0 1px 0 1px hsla(0, 0%, 0%, .1);
+}
+
+input,
+select,
+textarea {
+	color: #222;
+	background-color: #fff;
+}
+
+input,
+select,
+textarea {
+	font-size: 1.125em;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+select:hover,
+textarea:hover {
+	border-color: #666;
+	border-color: hsla(0, 0%, 70%, 1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #222;
+	border-color: hsla(0, 0%, 0%, .5);
+}
+
+/*------------------------- Input -------------------------*/
+input[type],
+.psu-btn {
+	border-radius: .25em;
+}
+
+input[type]:focus {
+	border-color: #ff7f00;
+}
+
+/*------------------------- Buttons -------------------------*/
+.psu-btn {
+	background-color: hsl(0, 0%, 30%);
+	border-bottom: 2px solid hsla(0, 0%, 0%, .15);
+}
+
+.psu-btn:hover {
+	background-color: hsl(0, 0%, 25%);
+}
+
+.psu-btn:active {
+	background-color: hsl(0, 0%, 20%);
+	border-top: 2px solid hsla(0, 0%, 0%, .15);
+	border-bottom: none;
+}
+
+/* Buttons - primary */
+.psu-btn-pri {
+	background-color: #ff7f00;
+	background-color: hsl(30, 100%, 50%);
+}
+
+.psu-btn-pri:hover {
+	background-color: hsl(25, 100%, 50%);
+}
+
+.psu-btn-pri:active {
+	background-color: hsl(25, 100%, 45%);
+}
+
+/* Buttons - negative */
+.psu-btn-neg {
+	background-color: #b4b4b4;
+	background-color: hsl(0, 0%, 70%);
+}
+
+.psu-btn-neg:hover {
+	background-color: hsl(0, 0%, 65%);
+}
+
+.psu-btn-neg:active {
+	background-color: hsl(0, 0%, 60%);
+}
+
+.psu-btn button,
+.psu-btn > a {
+	color: #fff;
+	color: hsla(0, 0%, 100%, .95);
+}
+
+.psu-btn:active button,
+.psu-btn:active > a {
+	color: hsla(0, 0%, 100%, .75);
+}
+
+/*------------------------- Footer -------------------------*/
+.menu-footer-container a {
+	color: #808080;
+	color: hsla(0, 0%, 50%, 1);
+}
+
+.site-info {font-size:.75em;}
+
+.site-info p {
+	color: hsla(0, 0%, 50%, .65);
+}
+
+/*------------------------- UI -------------------------*/
+.ui-dialog {
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 767px) {	
+
+	.nav-menu,
+	.nav-menu .sub-menu {
+		background-color: #303d60;
+	}
+	
+	.menu-toggle {
+		color: #fff;
+	}
+	
+	.menu-toggle:after,
+	.toggled-on .menu-toggle:after,
+	.nav-menu .parent-menu:after {
+		border-color: hsla(0, 0%, 50%, .5);
+	}
+		
+	.menu-toggle:after,
+	.nav-menu .parent-menu:after {
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+
+	.toggled-on .menu-toggle:after {
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-left-color: transparent;
+	}
+	
+}

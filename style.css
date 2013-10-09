@@ -1,0 +1,574 @@
+/*------------------------- Reset -------------------------*/
+h1, h2, h3, h4, p, ol, ul, dd, dl, th, td, button {
+	margin: 0;
+	padding: 0;
+}
+
+.unlist,
+ul {
+	list-style: none;
+}
+
+table {
+	width: 100%;
+}
+
+table,
+th,
+td,
+input,
+select,
+textarea,
+button {
+	border: none;
+}
+
+button {
+	background-color: transparent;
+}
+
+/*------------------------- Clearfix -------------------------*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*------------------------- Image replacement -------------------------*/
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*------------------------- Hide visually -------------------------*/
+.visuallyhidden,
+.assistive-text,
+.at,
+legend,
+label,
+.site-desc,
+.txt-desc,
+.screen-reader-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.reverse {
+    clip:rect(auto, auto, auto, auto);
+    height:auto;
+    margin:auto;
+    overflow:auto;
+    padding:inherit;
+    position:inherit;
+    width:auto;
+}
+
+/*------------------------- Pseudo content -------------------------*/
+.pseudo-content:before {
+	content: '';
+	position: absolute;
+}
+
+/*------------------------- Border box -------------------------*/
+.border-box,
+input[type],
+textarea,
+.navbar,
+.nav-menu,
+.psu-btn button,
+.psu-btn > a,
+#primary {
+    -webkit-appearance: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*------------------------- Skeleton -------------------------*/
+#masthead-cr,
+#main-cr,
+#colophon-cr {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*------------------------- WP: Assitive text -------------------------*/
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-decoration: none;
+	width: auto;
+	z-index: 100000;
+}
+
+/*------------------------- WP: search input fix for webkit -------------------------*/
+input[type="search"] {
+	-webkit-appearance: textfield;
+	padding-right: 2px;
+	width: 270px;
+}
+
+/*------------------------- Transition -------------------------*/
+.no-touch-links {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.no-touch .nav-menu a {
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-ms-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+}
+
+.no-touch .psu-btn {
+	-webkit-transition: background-color 0.1s ease-out;
+	-moz-transition: background-color 0.1s ease-out;
+	-ms-transition: background-color 0.1s ease-out;
+	-o-transition: background-color 0.1s ease;
+	transition: background-color 0.1s ease-out;
+}
+
+/*------------------------- Text inside content -------------------------*/
+.entry-content p,
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 1em;
+}
+
+.entry-content ol,
+.entry-content ul {
+	list-style-position: inside;
+}
+
+.entry-content p {line-height:1.5;}
+
+.entry-content p:last-child {margin-bottom:0;}
+
+.txt-ttl {
+	margin-bottom: 1em;
+}
+
+/*------------------------- Tables -------------------------*/
+th, td {
+	padding: .5em 1em;
+}
+
+/*------------------------- Forms -------------------------*/
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	display: inline-block;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	outline: none;
+}
+
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+.fld {
+	margin-bottom: 1em;
+}
+
+.fld:only-child,
+.fld:last-child {
+	margin-bottom: auto;
+}
+
+.fld-axn {
+	margin-top: 1.5em;
+}
+
+/*------------------------- Inputs -------------------------*/
+input[type],
+select,
+textarea,
+.psu-btn button,
+.psu-btn > a {
+	display: inline-block;
+	width: 100%;
+}
+
+input[type],
+select,
+textarea {	
+	padding: .35em .5em;
+}
+
+select,
+option {
+	padding-left: .25em;
+	padding-right: .25em;
+}
+
+/*------------------------- Buttons -------------------------*/
+.psu-btn button,
+.psu-btn > a {
+	padding: .5em .75em .4em;
+}
+
+.psu-btn-pos button,
+.psu-btn-pos > a {
+	min-width: 6em;
+}
+
+.psu-btn {
+	text-align: center;
+}
+
+/*------------------------- Header -------------------------*/
+.masthead-headers,
+.navbar {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.site-title,
+.main-navigation {
+	white-space: nowrap;
+}
+
+.site-title-link,
+.menu > li a {
+	display: block;
+}
+
+/*------------------------- Footer -------------------------*/
+.sidebar-container,
+.site-info {
+	display: block;
+}
+
+/*------------------------- Nav -------------------------*/
+.menu a,
+.copyright,
+.web-designer {
+	padding: .5em;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+.nav-menu .menu > li {
+	position: relative;
+}
+
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
+
+.nav-menu ul li:hover > ul {
+	display: block;
+}
+
+/*------------------------- Footer nav -------------------------*/
+.widget_nav_menu .menu > li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.widget_nav_menu .menu,
+.copyright,
+.web-designer {
+	text-align: center;
+}
+
+.widget_nav_menu .menu li {
+	text-align: left;
+}
+
+.copyright-notice,
+.web-designer a {
+	white-space: nowrap;
+}
+
+/*------------------------- UI -------------------------*/
+.ui-dialog {
+	padding: 1em;
+	width: 15em;
+}
+
+.ui-dialog-hdr .txt-ttl,
+.ui-dialog-hdr .dismiss-link-cr {
+	display: table-cell;
+}
+
+.ui-dialog-hdr .txt-ttl {
+	width: 100%;
+}
+
+.ui-dialog-hdr .dismiss-link-cr {
+	padding-left: 1em;
+}
+
+/*------------------------- Stack -------------------------*/
+.nav-menu .sub-menu,
+.nav-menu .children {
+	z-index: 99999;
+}
+
+/*------------------------- Media query -------------------------*/
+
+@media only screen and (min-width: 320px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+	
+	/*------------------------- Hack tools -------------------------*/
+	.clearfix:before,
+	.clearfix:after,
+	#main-cr:before,
+	#main-cr:after {
+		content: " ";
+		display: table;
+	}
+	
+	.clearfix:after,
+	#main-cr:after {
+		clear: both;
+	}
+	
+	.clearfix,
+	#main-cr {
+		*zoom: 1;
+	}
+	
+	/*------------------------- Skeleton -------------------------*/
+	#primary {
+		float: left;
+		width: 100%;
+		margin-right: -25%;
+	}
+	
+	#tertiary {
+		float: right;
+		width: 25%;
+	}
+
+	/*------------------------- Nav -------------------------*/	
+	.navbar,
+	.sidebar-container {
+		width: 100%;
+	}
+	
+	.nav-menu {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.menu > li {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	/*------------------------- Header -------------------------*/
+	.sidebar-container,
+	.site-info {
+		display: table-cell;
+		vertical-align: top;
+	}
+	
+	.widget_nav_menu .menu,
+	.copyright,
+	.web-designer {
+		text-align: left;
+	}
+	
+	.site-info {
+		white-space: nowrap;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	/*------------------------- Header -------------------------*/
+	.masthead-headers {
+		width: 100%;
+	}
+	
+	/*------------------------- Navigation -------------------------*/
+	.main-navigation.toggled-on {
+		position: relative;
+	}
+	
+	.menu-toggle {		
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: .5em 1em;
+		padding-right: 1.25em;
+		font-size: .875em;
+	}
+	
+	/* Triangle icon hint */
+	.menu-toggle:after,
+	.toggled-on .menu-toggle:after,
+	.nav-menu .parent-menu:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		margin-top: -3px;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 5px;
+		vertical-align: middle;
+	}
+		
+	.menu-toggle:after,
+	.nav-menu .parent-menu:after {
+		margin-bottom: .25em;
+		margin-left: .25em;
+		border-top-width: 6px;
+		border-bottom-width: 0;
+	}
+
+	.toggled-on .menu-toggle:after {
+		border-top-width: 0;
+		border-bottom-width: 6px;
+	}
+	
+	.nav-menu .parent-menu:after {
+		left: 0;
+		margin-left: 6px;
+	}
+
+	.toggled-on .nav-menu {
+		position: absolute;
+		display: block;
+		top: 100%;
+		min-width: 100%; /* Auto-width 1/2: Auto fill up the space occupied by the box content */
+		right: 0;
+	}
+	
+	.toggled-on li {
+		white-space: nowrap; /* Auto-width 2/2: Force no wrap for text content to define the width of the toggled menu box */
+	}
+
+	.toggled-on .nav-menu li > ul a {
+		width: auto;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+	
+	.nav-menu > ul > li > a,
+	.toggled-on .nav-menu > ul > li > .sub-menu a  {
+		padding: .75em 1.25em;
+	}
+	
+	.toggled-on .nav-menu > ul > li {
+		position: relative;
+	}
+	
+	.toggled-on .nav-menu > ul > li > ul {
+		top: 100%;
+		right: 0;
+		margin-right: 1em;
+		margin-top: -.5em
+	}
+
+	/*------------------------- Stack -------------------------*/
+	.navbar {
+		position: relative;
+		z-index: 200;
+	}
+}
+
+@media only screen and (min-width: 1024px) {	
+	/*------------------------- Stack -------------------------*/
+	.stack,
+	.masthead-headers,
+	.navbar {
+		position: relative;
+	}
+	
+	.stack,
+	.masthead-headers {
+		z-index: 90;
+	}
+	
+	.navbar {
+		z-index: 80;
+	}
+
+}
